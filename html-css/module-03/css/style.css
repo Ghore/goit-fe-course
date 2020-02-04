@@ -1,0 +1,114 @@
+body {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  width: 901px;
+  margin: 0 auto;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .container {
+    width: 900px;
+    margin: 0px;
+   }
+.main-menu a:hover {
+ color: #03a9f4;
+}
+.main-menu{
+  text-align: center;
+}
+ .main-menu li {
+   display: inline-block;
+   margin-right: 123px;
+   padding: 0px;
+   color: #626262;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-decoration: none;
+  margin-bottom: 105px;
+  }
+ 
+ .main-menu li:last-child {
+   margin-right: 0px;
+  }
+ 
+ a{
+   text-decoration: none;
+  }
+   .visually-hidden {
+     position: absolute !important;
+     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+     clip: rect(1px, 1px, 1px, 1px);
+     padding:0 !important;
+     border:0 !important;
+     height: 1px !important; 
+     width: 1px !important; 
+     overflow: hidden;
+   }
+   .main-content{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .post {
+    display: inline-block;
+    font-size: 12px;
+    width: 420px;
+    margin-right: 60px;
+    vertical-align: middle;
+  }
+  .post:not(:nth-child(2n)){
+    margin-right: 0px;
+  }
+.description {
+  color: #b4ad9e;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.article-title {
+color: #626262;
+margin-top: 0px;
+margin-bottom: 40px;
+font-size: 30px;
+font-weight: normal;  
+}
+.text {
+  color: #626262;
+  margin-bottom: 135px;
+  margin-top: 0px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+}
+.text:not(:nth-child(-n + 2)){
+    margin-bottom: 0px;
+}
+
+.load-more {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  height: 60px;
+  width: 165px;
+  border: 1px solid rgb(98, 98, 98) ;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  margin-top: 60px;
+  padding: 0px;
+  
+}
+.load-more:hover {
+  cursor: pointer;
+  border-color: #03a9f4;
+  background: #03a9f4;
+  color: #fff;
+}
+
