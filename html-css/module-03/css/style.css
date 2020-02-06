@@ -9,8 +9,10 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
-   margin-top: 105px;
-    margin-bottom:30px;
+  }
+  .image {
+    margin-bottom:30px ;
+    margin-top: 105px;
   }
   .container {
     width: 900px;
@@ -20,21 +22,21 @@ body {
 }
 .main-menu{
   text-align: center;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
 }
  .main-menu li {
-   display: inline-block;
-   margin-right: 123px;
-   padding: 0px;
+  font-family: "Raleway", "Arial", sans-serif;
+   display: block;
+   margin-left: 123px;
    color: #626262;
    font-weight: 700;
    text-transform: uppercase;
    text-decoration: none;
+   font-size: 14px;
+   float: left;
   }
- 
- .main-menu li:last-child {
-   margin-right: 0px;
-  }
- 
  a{
    text-decoration: none;
   }
@@ -70,16 +72,22 @@ body {
 
 .article-title {
 color: #626262;
+margin: 0px;
 margin-top: 45px;
 margin-bottom: 40px;
 font-size: 30px;
 font-weight: normal;  
 }
+
 .text {
   color: #626262;
+  margin: 0px;
+  margin-bottom: 135px;
   font-size: 14px;
   text-align: justify;
-
+}
+.text:not(:nth-child(-n + 2)){
+  margin-bottom: 0px;
 }
 
 
@@ -91,7 +99,6 @@ font-weight: normal;
   border: 1px solid rgb(98, 98, 98) ;
   font-size: 20px;
   margin: 0 auto;
-  margin-bottom: 70px;
   margin-top: 60px;
   padding: 0px;
   
