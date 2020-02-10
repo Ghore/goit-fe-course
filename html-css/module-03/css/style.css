@@ -1,5 +1,5 @@
 body {
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 14px;
   line-height: 20px;
   width: 901px;
@@ -12,7 +12,6 @@ body {
   }
   .image {
     margin-bottom:30px ;
-    margin-top: 105px;
   }
   .container {
     width: 900px;
@@ -25,18 +24,21 @@ body {
   padding: 0px;
   margin: 0px;
   font-size: 0px;
+  margin-bottom: 105px;
 }
  .main-menu li {
-  font-family: "Raleway", "Arial", sans-serif;
-   display: block;
-   margin-left: 123px;
+  font-family: 'Playfair Display', serif;
+   display: inline-block;
+   margin-right: 123px;
    color: #626262;
    font-weight: 700;
    text-transform: uppercase;
    text-decoration: none;
    font-size: 14px;
-   float: left;
   }
+  .main-menu li:last-child{
+    margin-right: 0;
+    }
  a{
    text-decoration: none;
   }
@@ -65,6 +67,8 @@ body {
     margin-right: 0px;
   }
 .description {
+  margin: 0px;
+  margin-bottom: 45px ;
   color: #b4ad9e;
   text-transform: uppercase;
   font-size: 14px;
@@ -73,7 +77,6 @@ body {
 .article-title {
 color: #626262;
 margin: 0px;
-margin-top: 45px;
 margin-bottom: 40px;
 font-size: 30px;
 font-weight: normal;  
@@ -86,14 +89,11 @@ font-weight: normal;
   font-size: 14px;
   text-align: justify;
 }
-.text:not(:nth-child(-n + 2)){
-  margin-bottom: 0px;
-}
 
 
 .load-more {
   display: block;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Playfair Display', serif;
   height: 60px;
   width: 165px;
   border: 1px solid rgb(98, 98, 98) ;
