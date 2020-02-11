@@ -16,6 +16,14 @@ body {
   .container {
     width: 900px;
    }
+   a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+  }
+  article {
+    margin-bottom: 135px;
+  }
 .main-menu a:hover {
  color: #03a9f4;
 }
@@ -24,10 +32,10 @@ body {
   padding: 0px;
   margin: 0px;
   font-size: 0px;
-  margin-bottom: 105px;
+  padding-bottom: 105px;
+  padding-top: 76px;
 }
  .main-menu li {
-  font-family: 'Playfair Display', serif;
    display: inline-block;
    margin-right: 123px;
    color: #626262;
@@ -85,12 +93,9 @@ font-weight: normal;
 .text {
   color: #626262;
   margin: 0px;
-  margin-bottom: 135px;
   font-size: 14px;
   text-align: justify;
 }
-
-
 .load-more {
   display: block;
   font-family: 'Playfair Display', serif;
@@ -99,7 +104,6 @@ font-weight: normal;
   border: 1px solid rgb(98, 98, 98) ;
   font-size: 20px;
   margin: 0 auto;
-  margin-top: 60px;
   padding: 0px;
   
 }
