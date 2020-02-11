@@ -154,7 +154,7 @@ margin-right: 30px;
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
-  padding-bottom: 46px;
+  margin-bottom: 46px;
 }
  .description::after {
   display: block;
@@ -177,10 +177,12 @@ margin-right: 30px;
   line-height: 26px;
   width: 160px;
   height: 50px;
-  position: absolute;
   text-align: center;
   color: #fff;
-  background-color: aqua;
+  background-color:#4ec6ab;
   border-radius: 3px;
   padding-top: 12px;
+}
+.news-post a:hover {
+  color: #008080;
 }
