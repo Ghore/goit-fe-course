@@ -65,7 +65,14 @@ html {
          .site-navigation a:hover{
           color: #03a9f4;
          }
-.slider{
+         .{
+          width: 1600px;
+          height: 600px;
+         background-image: url("../img/bg.jpg");
+         background-repeat: no-repeat;
+
+        }
+.slider{  
     position: relative;
     width: 1111px;
     height: 105px ;
