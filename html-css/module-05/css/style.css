@@ -29,11 +29,21 @@ html {
     max-width: 100%;
     height: auto;
   }
+  ul{
+    list-style: none;
+  }
       .site-logo {
+        font-family: 'roboto', sans-serif;
+        font-weight: 300;
+        line-height: 32px;
+        font-size: 30px;
         float: left;
     }
+    .site-logo::first-letter{
+      color: #03a9f4;
+    }
     nav {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'opensans', sans-serif;
         font-size: 18px;
         font-weight: 800;
         line-height: 32px;
@@ -61,8 +71,7 @@ html {
   
 }
 .slider-ctrl{
-   top: 50%; 
-  transform: translateY(-50%); 
+  top: 225px;
   position: absolute;
   border: none;
   display: inline-block;
@@ -70,9 +79,7 @@ html {
   width: 104px;
   height: 104px;
 }
-ul{
-  list-style: none;
-}
+
 .slider-ctrl-prew {
 left: 0;
 background-image: url(../img/sliser\ left.jpg);
@@ -81,34 +88,38 @@ background-image: url(../img/sliser\ left.jpg);
 right: 0;
 background-image: url(../img/sliser\ right.jpg);
 }
-.btn-wrappper {
-  color: #ffffff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .slider-description{
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'roboto', sans-serif;
+ transform: translate(-50% , -50%);
+ left: 50%;
+  top: 45%;
+  position: absolute;
+  width: 760px;
+  color: #fff;
+  text-transform: uppercase;
 }
 .slider-title{
-  font-weight: 700;
+  font-family: 'roboto', sans-serif;
+  font-weight: 900;
   font-size: 60px ;
   line-height: 82px;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
 }
 .slider-p{
-font-weight: 300;
+font-weight: 100;
 font-size: 24px;
 line-height: 54px;
 }
 .title {
+  font-family: 'Roboto', sans-serif;
   color: #515151;
   font-size: 48px;
   font-weight:800;
   line-height: 32px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 116px;
 }
 .title::after{
   display: block;
@@ -127,6 +138,7 @@ line-height: 54px;
 margin-right: 0px;
 }
 .item {
+  font-family: 'roboto', sans-serif;
   float: left;
   height: 40px;
   width: 200px;
@@ -153,16 +165,116 @@ padding-top: 14px;
   background-color:  #1abc9c;
 }
 .cards-item:hover .price {
-  background-color:#1abc9c ;
+  background-color:rgba(26, 188, 156, .5) ;
 }
 .image-wrapper{
   position: relative;
 }
 .overlay{
   background-color: rgba(0, 0, 0, 0.5);
-  bottom: 0;
-  right: 0;
   position: absolute;
-  width: 250px;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  border: 10px solid rgba(255, 255, 255, .5);
 }
+.cards-item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay-link {
+  color: #fff;
+}
+
+ .button {
+  border: none;
+ }
+
+ .list-item:hover .like{
+  background-color:  #1abc9c;
+}
+.list-item:hover .view{
+  background-color:  #1abc9c;
+}
+.list-item:hover .time{
+  background-color:  #1abc9c;
+}
+.list-item:hover .addcart{
+  background-color:  #1abc9c;
+}
+ .overlay-list{
+   position: absolute; 
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+  
+ }
+ .like {
+  background-position: center;
+   background-image:url(../img/button/like.png) ;
+   background-color: transparent; 
+   background-repeat: no-repeat;
+   margin-right: 8px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+
+ }
+ .view {
+  background-position: center;
+  background-image:url(../img/button/view.png) ;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+ }
+ .time {
+   background-position: center;
+  background-image:url(../img/button/time.png) ;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+ }
+.addcart{
+  margin-top: 8px;
+  text-transform: uppercase;
+  background-image:url(../img/button/add\ to\ cart.png) ;
+  background-color:#323232;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 166px;
+  height: 50px;
+  border: 2px solid #fff;
+}
+.new {
+  padding-bottom: 100px;
+}
+.footer {
+  padding-top: 40px;
+  padding-bottom: 36px;
+  background-size: cover;
+  background-color: rgb(50, 50, 50);
+  width: 100%;
+  height: 88px;
+}
+.descp-footer{
+  font-family: 'opensans', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.footer-link{
+  display: inline-block;
+  color: #03a9f4;
+}
+
+
