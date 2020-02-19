@@ -1,0 +1,401 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-cyrillic_latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-cyrillic_latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-800 - cyrillic_latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+        url('../fonts/montserrat-v14-cyrillic_latin-800.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-cyrillic_latin-800.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-900 - cyrillic_latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Montserrat Black'), local('Montserrat-Black'),
+        url('../fonts/montserrat-v14-cyrillic_latin-900.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-cyrillic_latin-900.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-200 - cyrillic_latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+        url('../fonts/roboto-slab-v11-cyrillic_latin-200.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-slab-v11-cyrillic_latin-200.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - cyrillic_latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/roboto-slab-v11-cyrillic_latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-slab-v11-cyrillic_latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+    --main-font: "Montserrat", sans-serif;
+    --text-color: #666666;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(0.0625rem 0.0625rem 0.0625rem 0.0625rem);
+    /* IE6, IE7 */
+    clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* ------------ШАПКА */
+
+.header-wrapper{
+    padding-top: 20px;
+}
+
+.header-list {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;
+    /* text-align: center; */
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+
+.header {
+    background-color: #000000;
+    padding-bottom: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg/mob.jpg);
+}
+
+.login {
+    border: none;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-family: var(--main-font);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 5.875rem;
+    height: 2.5rem;
+}
+
+.Signup {
+    border: none;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-family: var(--main-font);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 94px;
+    height: 40px;
+}
+
+.login:hover {
+    border: 0.0625rem solid #ffffff;
+}
+
+.Signup:hover {
+    border: 0.0625rem solid #ffffff;
+}
+
+.p {
+    text-align: center;
+    display: block;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: var(--main-font);
+}
+
+.description {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.find-link {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    font-weight: 800;
+    font-family: var(--main-font);
+    width: 280px;
+    height: 40px;
+}
+/* -------Вторая секция */
+
+
+.people-list{
+    margin-bottom: 30px;
+}
+
+.people{
+    padding-bottom: 58px;
+    padding-top: 74px;
+}
+
+.second-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-family: var(--main-font);
+}
+
+
+/* -------СПИСОК */
+
+.image-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 121px;
+}
+
+.image-wrapper::after {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 3px  solid #ffffff;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    content: '';
+    display: block;
+}
+.two::after{
+    background-color: #ffa507;
+    background-image: url(../img/pseudo/chimia.png);
+}
+.third::after{
+    background-color: #1cd7ad;
+    background-image: url(../img/pseudo/coffe.png);
+}
+.one::after {
+    background-color: #ff4e50;
+    background-image: url(../img/pseudo/telik.png);
+}
+.four::after{
+    background-color: #4e73db;
+    background-image: url(../img/pseudo/samalot.png);
+}
+.image{
+    margin-bottom: 26px;
+}
+.name {
+    color: #333333;
+    font-weight: 800;
+    font-family: var(--main-font);
+    margin-bottom: 1.25rem;
+    font-size: 14px;
+    text-align: center;
+}
+
+.about {
+    font-weight: 200;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+}
+
+.other-link{
+    color:#ff4e50;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: var(--main-font);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 20px;
+    border: 1px solid #ff6062;
+    font-weight: 800;
+    font-family: var(--main-font);
+    width: 280px;
+    height: 40px;
+}
+
+
+@media (max-width:767px){
+    .people-list-item:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .people-list-item:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    .people-list-item:nth-child(2){
+        margin-bottom: 0px;
+    }
+
+    .people-list-item:last-child{
+        margin-bottom: 0px;
+    }
+    .container {
+        width: 748px;
+        margin: 0 auto;
+    }
+
+    .logo{
+        margin-bottom: 0px;
+    }
+
+    .header-list {
+    margin-bottom: 0px;
+    }
+
+    .header-wrapper{
+        margin-bottom: 120px;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        display: flex;
+    }
+
+    .title{
+        margin-bottom: 44px;
+        font-size: 52px;
+    }
+    
+    .description{
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
+    .header {
+        padding-bottom: 230px;
+        background-image: url(../img/bg/tablet.png);
+    }
+
+    .people-list{
+        padding-left: 128px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .two-order{
+        order: 1;
+    }
+    .four-order{
+        order: 2;
+    }
+    .people-list-item{
+        width: 236px;
+    }
+
+    .second-title{
+        margin-bottom: 42px;
+    }
+
+    .other-link{
+     width: 197px;
+    height: 44px;
+    }
+
+    
+}
+
+@media (min-width: 1200px){
+
+    .container{
+        width: 940px;
+    }
+    
+    .header{
+        background-image: url(../img/bg/decktop.png);
+    }
+    .people-list{
+        width: 940px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .people-list-item{
+        margin-bottom: 0px;
+    }
+}
