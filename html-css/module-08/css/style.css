@@ -215,7 +215,7 @@ ul {
 }
 
 .second-title {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
     font-size: 22px;
     font-family: var(--main-font);
@@ -297,25 +297,17 @@ ul {
 }
 
 
-@media (max-width:767px){
+@media (max-width:767px) {
     .people-list-item:not(:last-child){
         margin-bottom: 30px;
     }
 }
 
 
-@media (min-width: 768px) {
-    .people-list-item:not(:last-child){
-        margin-bottom: 30px;
-    }
+@media (min-width: 768px)  {
+ 
+    
 
-    .people-list-item:nth-child(2){
-        margin-bottom: 0px;
-    }
-
-    .people-list-item:last-child{
-        margin-bottom: 0px;
-    }
     .container {
         width: 748px;
         margin: 0 auto;
@@ -353,7 +345,8 @@ ul {
     }
 
     .people-list{
-        padding-left: 128px;
+        margin: 0 auto;
+        width: 492px;
         margin-bottom: 30px;
         flex-wrap: wrap;
         display: flex;
@@ -381,6 +374,16 @@ ul {
     
 }
 
+@media (min-width:768px) and (max-width:1199px){
+    .people-list-item:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    .people-list-item:nth-child(2){
+        margin-bottom: 0px;
+    } 
+}
+
 @media (min-width: 1200px){
 
     .container{
@@ -391,11 +394,10 @@ ul {
         background-image: url(../img/bg/decktop.png);
     }
     .people-list{
+        display: flex;
         width: 940px;
         justify-content: space-between;
         flex-wrap: nowrap;
     }
-    .people-list-item{
-        margin-bottom: 0px;
-    }
-}
+  
+} 
