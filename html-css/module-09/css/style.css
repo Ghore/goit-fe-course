@@ -1,4 +1,3 @@
-/* montserrat-regular - cyrillic_latin */
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -97,43 +96,32 @@ ul {
     margin: 0;
     box-sizing: border-box;
 }
-
-.container {
-    width: 300px;
+/* .container{
     margin: 0 auto;
-}
+} */
 
 /* ------------ШАПКА */
 
 .header-wrapper{
     padding-top: 20px;
+    padding-bottom: 140px;
 }
 
-.header-list {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    margin-bottom: 120px;
-}
-
-.logo {
-    justify-content: center;
-    display: flex;
-    margin-bottom: 40px;
-    /* text-align: center; */
-    color: #ffffff;
-    font-weight: 800;
-    font-size: 20px;
-    font-family: var(--main-font);
-}
-
-.header {
+.header-wrapper{
     background-color: #000000;
-    padding-bottom: 120px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/bg/mob.jpg);
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    display: block;
+    text-align: center;
 }
 
 .login {
@@ -160,17 +148,21 @@ ul {
     height: 40px;
 }
 
+.logo {
+    justify-content: center;
+    display: flex;
+    /* text-align: center; */
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: var(--main-font);
+}
 .login:hover {
     border: 0.0625rem solid #ffffff;
 }
 
 .Signup:hover {
     border: 0.0625rem solid #ffffff;
-}
-
-.p {
-    text-align: center;
-    display: block;
 }
 
 .title {
@@ -181,7 +173,6 @@ ul {
     font-size: 30px;
     font-family: var(--main-font);
 }
-
 .description {
     margin-bottom: 20px;
     text-align: center;
@@ -202,6 +193,7 @@ ul {
     width: 280px;
     height: 40px;
 }
+
 /* -------Вторая секция */
 
 
@@ -292,113 +284,58 @@ ul {
     border: 1px solid #ff6062;
     font-weight: 800;
     font-family: var(--main-font);
-    width: 280px;
+    width: 100%;
     height: 40px;
 }
 
-
-@media (max-width:767px) {
-    .people-list-item:not(:last-child){
-        margin-bottom: 30px;
-    }
+@media (max-width: 767px) {
+    .header-first-col {
+        margin-bottom: 60px;
+}
+.people-list-item:not(:last-child){
+    margin-bottom: 30px;
+}
+.logo{
+    margin-bottom: 40px;
 }
 
-
-@media (min-width: 768px)  {
- 
-    .container {
-        width: 748px;
-        margin: 0 auto;
-    }
-
-    .logo{
-        margin-bottom: 0px;
-    }
-
-    .header-list {
-    margin-bottom: 0px;
-    }
-
-    .header-wrapper{
-        margin-bottom: 120px;
-        align-items: baseline;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        display: flex;
-    }
-
-    .title{
-        margin-bottom: 44px;
-        font-size: 52px;
-    }
-    
-    .description{
-        margin-bottom: 40px;
-        font-size: 24px;
-    }
-
-    .header {
-        padding-bottom: 230px;
+}
+@media (min-width: 768px) and (max-width:1199px) {
+.header-wrapper{
         background-image: url(../img/bg/tablet.png);
     }
-
-    .people-list{
-        margin: 0 auto;
-        width: 492px;
-        margin-bottom: 30px;
-        flex-wrap: wrap;
-        display: flex;
-    }
-
-    .two-order{
-        order: 1;
-    }
-    .four-order{
-        order: 2;
-    }
-    .people-list-item{
-        width: 236px;
-    }
-
-    .second-title{
-        margin-bottom: 42px;
-    }
-
-    .other-link{
-     width: 197px;
-    height: 44px;
-    }
-
-    
+.mb{
+    margin-bottom: 150px;
+}
+.header-wrapper{
+    padding-bottom: 230px;
 }
 
-@media (min-width:768px) and (max-width:1199px){
-    .people-list-item:not(:last-child){
-        margin-bottom: 30px;
-    }
-
-    .people-list-item:nth-child(2){
-        margin-bottom: 0px;
-    } 
-    .container{
-        padding: 0 40px;
-    }
+.title{
+    margin-bottom: 40px;
+}
+.description{
+    margin-bottom: 35px;
 }
 
+people-list-item:not(:nth-last-child(-n + 2)){
+    margin-bottom: 60px;
+}
+
+}
 @media (min-width: 1200px){
-
-    .container{
-        width: 940px;
-    }
-    
-    .header{
+    .header-wrapper{
+        min-height: 700px;
         background-image: url(../img/bg/decktop.png);
     }
-    .people-list{
-        display: flex;
-        width: 940px;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+    .button-wrapper{
+        margin-bottom: 165px;
     }
-  
-} 
+    .title{
+        margin-bottom: 40px;
+    }
+    .description{
+        margin-bottom: 35px;
+    }
+
+}
