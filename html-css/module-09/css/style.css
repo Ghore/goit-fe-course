@@ -312,7 +312,7 @@ ul {
 }
 
 .title{
-    margin-bottom: 40px;
+        margin-bottom: 40px;
 }
 .description{
     margin-bottom: 35px;
@@ -332,9 +332,11 @@ people-list-item:not(:nth-last-child(-n + 2)){
         margin-bottom: 165px;
     }
     .title{
+        font-size: 52px;
         margin-bottom: 40px;
     }
     .description{
+        font-size: 24px;
         margin-bottom: 35px;
     }
 
