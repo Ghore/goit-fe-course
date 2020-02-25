@@ -1,0 +1,99 @@
+.amazing {
+  padding-top: 50px;
+}
+
+.sections__title {
+  text-align: center;
+  font-weight: 400;
+  font-family: $main-font-second;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 115px;
+}
+
+.sections__title::after {
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #f38181;
+  content: '';
+}
+
+.section__title_p {
+  margin-top: 24px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.amazing__title_p::after {
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #f38181;
+  content: '';
+}
+
+.title-wrapper {
+  margin: 0 auto;
+  width: 182px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.amazing__list {
+  padding-bottom: 100px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+
+}
+
+.amazing__list_item {
+  flex-basis: 300px;
+}
+
+.amazing__list_item:not(:nth-child(3n)) {
+  margin-right: 60px;
+}
+
+.amazing__list_item:nth-child(-n + 3) {
+  margin-bottom: 106px;
+}
+
+.amazing__list_icon {
+  transform: translate(-150%, -10%);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  fill: #95e1d3;
+  transition: all 200ms linear;
+}
+
+.amazing__list_item:hover .amazing__list_icon {
+  fill: rgb(243, 129, 129);
+}
+
+.amazing__list_name {
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: $main-font;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.amazing__list_description {
+  color: #999999;
+  line-height: 24px;
+  font-size: 15px;
+  font-family: $main-font-third;
+}
