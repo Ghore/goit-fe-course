@@ -13,32 +13,40 @@
   padding-bottom: 86px;
   justify-content: space-between;
   display: flex;
-}
 
-.cards__item {
-  text-align: center;
-  margin: 0px;
-}
+  &__item {
+    text-align: center;
+    margin: 0px;
+ 
+    &:hover .overlay{
+      transition: all 200ms linear;
+      box-shadow: 8px 10px 0px 1px rgb(149, 225, 211);
+      transform: translate(-2%, -2%);
+      visibility: visible;
+    }
+ 
+  }
 
+  &__image {
+    margin-bottom: 30px;
+  }
 
-.cards__image {
-  margin-bottom: 30px;
-}
+  &__name {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 14px;
+    font-family: $main-font;
+  }
 
-.card__name {
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  color: #333333;
-  font-size: 14px;
-  font-family: $main-font;
-}
+  &__position {
+    font-weight: 300;
+    color: $text-color;
+    line-height: 24px;
+    font-size: 15px;
+    font-family: $main-font-third;
+  }
 
-.card__position {
-  font-weight: 300;
-  color: $text-color;
-  line-height: 24px;
-  font-size: 15px;
-  font-family: $main-font-third;
 }
 
 .image-wrapper {
@@ -54,46 +62,42 @@
   background-image: -webkit-linear-gradient(90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
   width: 380px;
   height: 470px;
-}
 
+  &__list{
+    height: 470px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+  
+    &_item svg{
+      fill: #f38181;
+      width: 26px;
+      height: 22px;
+      
+      &:hover{
+        fill: $main-color;
+      }
+    
+    }
+  
+    &_link{
+      background-color: rgb(252, 227, 138);
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 56px;
+      height: 56px;
+      border: 1px solid #ffffff;
+   
+      &:hover{
+        background-color: #f38181;
+      }
+   
+    }
 
-.cards__item:hover .overlay {
-  transition: all 200ms linear;
-  box-shadow: 8px 10px 0px 1px rgb(149, 225, 211);
-  transform: translate(-2%, -2%);
-  visibility: visible;
-}
+  }
 
-.overlay__list {
-  height: 470px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  display: flex;
-}
-
-.overlay__list_item svg {
-  fill: #f38181;
-  width: 26px;
-  height: 22px;
-}
-
-.overlay__list_item svg:hover {
-  fill: $main-color;
-}
-
-.overlay__list_link {
-  background-color: rgb(252, 227, 138);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 56px;
-  height: 56px;
-  border: 1px solid #ffffff;
-}
-
-.overlay__list_link:hover {
-  background-color: #f38181;
 }
 
 .overlay__list_link:hover .overlay__list_icon {

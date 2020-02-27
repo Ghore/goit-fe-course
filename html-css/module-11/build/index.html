@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placeholder title</title>
+    <!-- Сюда будет всталена ссылка на файл стилей -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endinject -->
+  </head>
+  <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="navigation__logo" href="#">MoGo</a>
+          <div class="navigation-wrapper">
+            <ul class="navigation__list">
+              <li class="navigation__list_item">
+                <a href="#" class="navigation__link">about</a>
+              </li>
+              <li class="navigation__list_item">
+                <a href="#" class="navigation__link">service</a>
+              </li>
+              <li class="navigation__list_item">
+                <a href="#" class="navigation__link">work</a>
+              </li>
+              <li class="navigation__list_item">
+                <a href="#" class="navigation__link">blog</a>
+              </li>
+              <li class="navigation__list_item">
+                <a href="#" class="navigation__link">contact</a>
+              </li>
+            </ul>
+            <ul class="navigation__icon">
+              <li class="navigation__icon_item">
+                <a href="#" class="navigation__icon_link">
+                  <svg class="navigation__icon_image">
+                    <use href="./images/links/sprite.svg#case"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation__icon_item">
+                <a href="#" class="navigation__icon_link">
+                  <svg class="navigation__icon_image">
+                    <use href="./images/links/sprite.svg#search"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h1 class="header__title">
+          Creative Template
+          <span class="header__title_second">Welcome to MoGo</span>
+        </h1>
+        <button class="header__btn">Learn more</button>
+      </div>
+    </header>
+  <body>
+    <main>
+      <section class="amazing container">
+          <!-- <h1 class="visually-hidden">hidden</h1> -->
+          <div class="title-wrapper">
+            <h2 class="section__title">
+              We work width <span class="section__title_p">amazing services</span>
+            </h2>
+          </div>
+          <ul class="amazing__list">
+            <li class="amazing__list_item">
+              <div class="amazing__list_icon_wrapper">
+                <svg class="amazing__list_icon">
+                  <use href="./images/pseudo/sprite.svg#ALARM"></use>
+                </svg>
+              </div>
+              <h2 class="amazing__list_name">Photography</h2>
+              <p class="amazing__list_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                ut cupiditate eveniet dolore.
+              </p>
+            </li>
+      
+            <li class="amazing__list_item">
+              <div class="amazing__list_icon_wrapper">
+                <svg class="amazing__list_icon">
+                  <use href="images/pseudo/sprite.svg#LINE_GRAPH"></use>
+                </svg>
+              </div>
+              <h2 class="amazing__list_name">Web Design</h2>
+              <p class="amazing__list_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                ut cupiditate eveniet dolore.
+              </p>
+            </li>
+            <li class="amazing__list_item">
+              <div class="amazing__list_icon_wrapper">
+                <svg class="amazing__list_icon">
+                  <use href="images/pseudo/sprite.svg#COMPUTER_OK"></use>
+                </svg>
+              </div>
+              <h2 class="amazing__list_name">Creativity</h2>
+              <p class="amazing__list_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                ut cupiditate eveniet dolore.
+              </p>
+            </li>
+            <li class="amazing__list_item">
+              <div class="amazing__list-icon-wrapper">
+                <svg class="amazing__list_icon">
+                  <use href="./images/pseudo/sprite.svg#BOOK_2"></use>
+                </svg>
+              </div>
+              <h2 class="amazing__list_name">seo</h2>
+              <p class="amazing__list_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                ut cupiditate eveniet dolore.
+              </p>
+            </li>
+            <li class="amazing__list_item">
+              <div class="amazing__list_icon_wrapper">
+                <svg class="amazing__list_icon">
+                  <use href="images/pseudo/sprite.svg#HOME"></use>
+                </svg>
+              </div>
+              <h2 class="amazing__list_name">css/html</h2>
+              <p class="amazing__list_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                ut cupiditate eveniet dolore.
+              </p>
+            </li>
+            <li class="amazing__list_item">
+              <div class="amazing__list_icon_wrapper">
+                <svg class="amazing__list_icon">
+                  <use href="images/pseudo/sprite.svg#IMAGE"></use>
+                </svg>
+              </div>
+              <h2 class="amazing__list_name">digital</h2>
+              <p class="amazing__list_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                ut cupiditate eveniet dolore.
+              </p>
+            </li>
+          </ul>
+        </section>
+      <section class="our-team container">
+          <div class="title-wrapper">
+            <h2 class="section__title">
+              Who we are <span class="section__title_p">Meet our team</span>
+            </h2>
+          </div>
+          <p class="our-team__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            similique aspernatur fugit sequi totam autem a, quam neque deserunt
+            repellat molestias ex rerum sit maiores! Quaerat est ias ex rerum sit
+            maiores! Quaerat est ias ex rerum sit maiores! Quaerat est quis fuga
+            itaque?
+          </p>
+          <ul class="cards">
+            <li class="cards__item">
+              <div class="image-wrapper">
+                <img
+                  srcset="
+                    ./images/ourteam/our-team.jpg 380w,
+                    ./images/ourteam/1@2x.png     760w
+                  "
+                  sizes="380px"
+                  src="images/ourteam/our-team.jpg"
+                  alt="man"
+                  class="cards__image"
+                  height="470"
+                />
+                <p class="cards__name">Matthew Dix</p>
+                <p class="cards__position">Graphic Design</p>
+                <div class="overlay">
+                  <ul class="overlay__list">
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link twitter" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link pinterest" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#peanterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link instagram" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link facebook" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="image-wrapper">
+                <img
+                  srcset="
+                    ./images/ourteam/our-team2.jpg 380w,
+                    ./images/ourteam/2@2x.png      760w
+                  "
+                  sizes="380px"
+                  src="images/ourteam/our-team2.jpg"
+                  alt="man"
+                  class="cards__image"
+                  height="470"
+                />
+                <p class="cards__name">Christopher Campbell</p>
+                <p class="cards__position">Branding/UX design</p>
+                <div class="overlay">
+                  <ul class="overlay__list">
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link twitter" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link pinterest" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#peanterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link instagram" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link facebook" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="image-wrapper">
+                <img
+                  srcset="
+                    ./images/ourteam/our-team3.jpg 380w,
+                    ./images/ourteam/3@2x.png      760w
+                  "
+                  sizes="380px"
+                  src="images/ourteam/our-team3.jpg"
+                  alt="man"
+                  class="cards__image"
+                  height="470"
+                />
+                <p class="cards__name">Michael Fertig</p>
+                <p class="cards__position">Developer</p>
+                <div class="overlay">
+                  <ul class="overlay__list">
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link twitter" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link pinterest" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#peanterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link instagram" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="overlay__list_item">
+                      <a class="overlay__list_link facebook" href="#">
+                        <svg class="overlay__list_icon">
+                          <use href="./images/links/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+    </main>
+    <footer class="footer container">
+        <p class="footer__description">
+          © 2016 MoGo free PSD template by
+          <a class="footer__link" href="#"> Laaqiq </a>
+        </p>
+    
+        <form action="#" class="form-wrapper">
+          <input
+            type="text"
+            placeholder="Your Email..."
+            name="email"
+            class="form__style"
+          />
+          <button class="footer__button">subscribe</button>
+        </form>
+      </footer>
+    <!-- Сюда будет всталена ссылка на файл скриптов -->
+    <!-- inject:js -->
+    <!-- endinject -->
+  </body>
+</html>

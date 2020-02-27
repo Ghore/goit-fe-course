@@ -2,43 +2,49 @@
   padding-top: 50px;
 }
 
-.sections__title {
+.section__title {
   text-align: center;
   font-weight: 400;
   font-family: $main-font-second;
   font-size: 24px;
   color: #333333;
   margin-bottom: 115px;
+
+  &::after {
+    margin: auto;
+    margin-top: 40px;
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #f38181;
+    content: '';
+  }
+
+  &_p {
+    margin-top: 24px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 30px;
+
+
+  }
 }
 
-.sections__title::after {
-  margin: auto;
-  margin-top: 40px;
-  display: block;
-  width: 70px;
-  height: 4px;
-  background-color: #f38181;
-  content: '';
-}
+.sections__title::after {}
 
-.section__title_p {
-  margin-top: 24px;
-  white-space: nowrap;
-  text-transform: uppercase;
-  font-family: $main-font;
-  font-weight: 700;
-  font-size: 30px;
-}
+.section__title_p {}
 
-.amazing__title_p::after {
-  margin: auto;
-  margin-top: 40px;
-  display: block;
-  width: 70px;
-  height: 4px;
-  background-color: #f38181;
-  content: '';
-}
+// .amazing__title_p::after {
+//   margin: auto;
+//   margin-top: 40px;
+//   display: block;
+//   width: 70px;
+//   height: 4px;
+//   background-color: #f38181;
+//   content: '';
+// }
 
 .title-wrapper {
   margin: 0 auto;
@@ -55,45 +61,44 @@
   flex-wrap: wrap;
   display: flex;
 
-}
+  &_item {
+    flex-basis: 300px;
 
-.amazing__list_item {
-  flex-basis: 300px;
-}
+    &:not(:nth-child(3n)) {
+      margin-right: 60px;
+    }
 
-.amazing__list_item:not(:nth-child(3n)) {
-  margin-right: 60px;
-}
+    &:nth-child(-n + 3) {
+      margin-bottom: 106px;
+    }
+  }
 
-.amazing__list_item:nth-child(-n + 3) {
-  margin-bottom: 106px;
-}
+  &_icon {
+    transform: translate(-150%, -10%);
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    fill: #95e1d3;
+    transition: all 200ms linear;
+  }
 
-.amazing__list_icon {
-  transform: translate(-150%, -10%);
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  fill: #95e1d3;
-  transition: all 200ms linear;
+  &_name {
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $main-font;
+    position: relative;
+    margin-bottom: 14px;
+  }
+
+  &_description {
+    color: #999999;
+    line-height: 24px;
+    font-size: 15px;
+    font-family: $main-font-third;
+  }
 }
 
 .amazing__list_item:hover .amazing__list_icon {
   fill: rgb(243, 129, 129);
-}
-
-.amazing__list_name {
-  color: #333333;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: $main-font;
-  position: relative;
-  margin-bottom: 14px;
-}
-
-.amazing__list_description {
-  color: #999999;
-  line-height: 24px;
-  font-size: 15px;
-  font-family: $main-font-third;
 }

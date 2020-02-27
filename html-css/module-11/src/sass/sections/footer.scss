@@ -3,32 +3,31 @@
   padding-top: 30px;
   justify-content: space-between;
   display: flex;
-}
 
-.footer__description {
-  font-weight: 300;
-  font-size: 14px;
-  font-family: $main-font;
-}
+  &__description{
+    font-size: 14px;
+    font-family: $main-font;
+  }
 
-.footer__link {
-  color: #f38181;
-  display: inline-block;
+  &__link{
+    color: #f38181;
+    display: inline-block;
+  }
+
+  &__button{
+    text-transform: uppercase;
+    color: $main-color;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: $main-font;
+    background-color: #95e1d3;
+    height: 40px;
+    width: 150px;
+  }
 }
 
 .form-wrapper {
   display: flex;
-}
-
-.footer__button {
-  text-transform: uppercase;
-  color: $main-color;
-  font-weight: 700;
-  font-size: 14px;
-  font-family: $main-font;
-  background-color: #95e1d3;
-  height: 40px;
-  width: 150px;
 }
 
 .form__style {
